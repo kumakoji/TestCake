@@ -43,22 +43,6 @@ class PostsController extends AppController{
 		if($this->request->is('get')){
 			throw new MethodNotAllowedException();
 		}
-		//ajax
-		/*
-		if($this->requet->is('ajax')){
-			if($this->Post->delete($id)){
-				$this->autoRender = false;
-				$this->autoLayout = false;
-				$response = array('id'=>$id);
-				console.log(json_encode($response));
-				$this->header('Content-Type: application/json');
-				echo json_encode($response);
-				exit();
-			}
-		}
-		$this->redirect(array('action'=>'index'));
-		*/
-		
 		if($this->Post->delete($id)){
 			$this->redirect(array('action'=>'index'));
 		}else{
