@@ -1,6 +1,7 @@
 <?php
 
 class PostsController extends AppController{
+<<<<<<< .merge_file_89GmSl
 	public $helpers = array('Html','Form');
 
 	public function  index(){
@@ -67,6 +68,10 @@ class PostsController extends AppController{
 		
 		
 	}
+=======
+	public $scaffold;
+	
+>>>>>>> .merge_file_MlLhvl
 }
 
 ?>
